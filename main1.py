@@ -3,6 +3,7 @@ from SimulationData import GaussData
 from pre import GenePurePairs
 
 def Pairs(X):
+    # All observed variables are candidate variables
     matrix, clusters = GenePurePairs(X)
     pairs = []
     for i, cluster in enumerate(clusters):
