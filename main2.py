@@ -11,6 +11,7 @@ def constraint(x1, x2, x3, x4):
     return independence(x1 + coefficient[0] * x2 + coefficient[1] * x3, x1)[0], coefficient[0]
 
 def Pairs(X):
+    # All observed variables are candidate variables
     matrix, clusters = GenePurePairs(X)
     pairs = []
     for i, cluster in enumerate(clusters):
